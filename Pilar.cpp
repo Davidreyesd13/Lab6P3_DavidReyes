@@ -1,10 +1,8 @@
 #include "Pilar.h"
-Pilar::Pilar() {
-
-}
-
-Pilar::Pilar(string name, int vida, int ataque, Katana color,Respiracion poder, int lunasv)
+Pilar::Pilar(string name):cazador(name,opcion)
 {
-	this->lunasv = lunasv;
-	cazador(name, vida, ataque, color,poder);
+	lunasv = 0;
+	vida += rand() % 11 + 80; // Aumentar vida en un rango aleatorio entre 80 y 90
+	puntosAtaque += 100; // Aumentar puntos de ataque en 100
+	
 }

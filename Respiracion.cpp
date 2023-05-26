@@ -1,7 +1,8 @@
 #include "Respiracion.h"
 
-Respiracion::Respiracion(string namerespi)//constructor
+int Respiracion::obtenerRangoPoder()
 {
-	this->namerespi = namerespi;
-	
+	return 0;
 }
+
+

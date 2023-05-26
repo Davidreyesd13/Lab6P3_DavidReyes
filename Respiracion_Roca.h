@@ -1,6 +1,6 @@
 #pragma once
 #include "Respiracion.h"
-class Respiracion_Roca:protected Respiracion {
-	virtual int poder() const;
+class Respiracion_Roca:public Respiracion {
+	virtual int obtenerRangoPoder();
 };
 

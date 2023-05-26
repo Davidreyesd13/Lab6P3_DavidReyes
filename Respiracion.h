@@ -7,7 +7,6 @@ class Respiracion
 {
 	string namerespi;
 public:
-	virtual int poder() const;
-	Respiracion(string namerespi);
+	virtual int obtenerRangoPoder();
 };
 

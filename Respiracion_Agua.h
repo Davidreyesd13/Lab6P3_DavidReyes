@@ -1,8 +1,8 @@
 #pragma once
 #include "Respiracion.h"
-class Respiracion_Agua: protected Respiracion
+class Respiracion_Agua: public Respiracion
 {
 	//metodo polimorfico
-	virtual int poder() const;
+	virtual int obtenerRangoPoder();
 };
 
