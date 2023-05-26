@@ -5,9 +5,36 @@
 #include "Pilar.h"
 #include "Respiracion.h";
 using namespace std;
+int random_atack_Vida() {//metodo random para crear la vida y el ataque;
+	
+	srand(time(NULL));
+	int reusult = 20+rand() % (30 + 1 - 20);
+
+}
+string colorkatana() {
+	srand(time(NULL));
+	string nk;//nombre katana
+	int result = 1 + rand() % (4 + 1 - 1);
+	switch (result) {
+	case 1:
+		nk = "Rojo";
+		break;
+	case 2:
+		nk = "negro";
+		break;
+	case 3:
+		nk = "morado";
+		break;
+	case 4:
+		nk = "naranja";
+		break;
+	}
+}
 void menu() {
+	srand(time(NULL));
+	string nombre;
 	vector<cazador> cazadores;
-	cazadores.push_back(Pilar();
+	cazadores.push_back(Pilar("Rengoku", random_atack_Vida()+ (80 + rand() % (90 + 1 - 80)), random_atack_Vida()+100, Katana(10+rand()%(20+1-20),"Roja"),Respiracion("Fuego"), 1));//creacion de pilar
 	vector<Luna_Superior> lunas;
 	int respuesta = 1;
 	while (respuesta!=7)
@@ -16,6 +43,7 @@ void menu() {
 		cin >> respuesta;
 		switch (respuesta) {
 		case 1:
+
 			break;
 		case 2:
 			break;

@@ -5,7 +5,7 @@ cazador::cazador(string name, int vida, int ataque, Katana color, Respiracion re
 	this->name = name;
 	this->vida = vida;
 	this->color = color;
-	respi = Respiracion::
+	
 }
 
 cazador::cazador()

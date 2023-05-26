@@ -7,5 +7,8 @@ class Luna_Superior
 	int posicion;
 	int vida;
 	int ataque;
+public:
+	Luna_Superior();
+	Luna_Superior(string nombre, int posicion, int vida, int ataque);
 };
 
